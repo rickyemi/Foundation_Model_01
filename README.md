@@ -19,6 +19,10 @@
 ### IDE
 - google colab T4 GPU
 
+### Code 
+
+- `PubMed_Abstract_Categorization.ipynb` and `PubMed_Abstract_Categorization.py`
+
 ### Concepts Applied:
 -LLaMA foundation model
 - Prompt Engineering
