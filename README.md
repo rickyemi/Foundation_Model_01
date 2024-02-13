@@ -7,7 +7,7 @@
 ## Problem Statement
 
 ### Business Context
-- PubMed® comprises more than 36 million citations for biomedical literature from MEDLINE, life science journals, and online books. Citations may include links to full text content from PubMed Central and publisher websites. As of 23 May 2023, PubMed has more than 35 million citations and abstracts dating back to 1966, selectively to the year 1865, and very selectively to 1809. As of the same date, 24.6 million of PubMed's records are listed with their abstracts, and 26.8 million records have links to full-text versions (of which 10.9 million articles are available, full-text for free).[8] Over the last 10 years (ending 31 December 2019), an average of nearly one million new records were added each year.
+- PubMed® comprises more than 36 million citations for biomedical literature from MEDLINE, life science journals, and online books. Citations may include links to full text content from PubMed Central and publisher websites. As of 23 May 2023, PubMed has more than 35 million citations and abstracts dating back to 1966, selectively to the year 1865, and very selectively to 1809. As of the same date, 24.6 million of PubMed's records are listed with their abstracts, and 26.8 million records have links to full-text versions (of which 10.9 million articles are available, full-text for free). In the last 14 years, an average of nearly one million new records were added each year.
 ### Problem Definition
 -PubMed has been reported to include some articles published in predatory journals. MEDLINE and PubMed policies for the selection of journals for database inclusion are slightly different. Weaknesses in the criteria and procedures for indexing journals in PubMed Central may allow publications from predatory journals to leak into PubMed. 
 - Despite the abundance of scientific articles available on PubMed, scientists often face challenges deriving key insights from these various data sources - primarily due to the huge volume of text data tends to be compute constraints.
@@ -25,6 +25,7 @@
 
 ### Concepts Applied:
 -LLaMA foundation model
+
 - Prompt Engineering
   - A prompt contains any of the following elements:
 
@@ -38,12 +39,12 @@
 
 #### Optimization Parameters 
 
-    **max_tokens**: specifies the maximum number of tokens the model should generate in response to the prompt.
+        -  **max_tokens**: specifies the maximum number of tokens the model should generate in response to the prompt.
 
-     **temperature**: controls the randomness of the generated response. A higher temperature value will result in a more random response, while a lower temperature value will result in a more predictable response.
+        - **temperature**: controls the randomness of the generated response. A higher temperature value will result in a more random response, while a lower temperature value will result in a more predictable response.
 
-     **top_p:** This parameter controls the diversity of the generated response by establishing a cumulative probability cutoff for token selection. A higher value of top_p will result in a more diverse response, while a lower value will result in a less diverse response.
+        - **top_p:** This parameter controls the diversity of the generated response by establishing a cumulative probability cutoff for token selection. A higher value of top_p will result in a more diverse response, while a lower value will result in a less diverse response.
 
-    **top_k**: This parameter controls the maximum number of most-likely next tokens to consider when generating the response at each step.
+       - **top_k**: This parameter controls the maximum number of most-likely next tokens to consider when generating the response at each step.
 
-    **repeat_penalty**: This parameter controls the penalty for repeating tokens in the generated response. A higher value of repeat_penalty will result in a lower probability of repeating tokens, while a lower value will result in a higher probability of repeating tokens.
+       - **repeat_penalty**: This parameter controls the penalty for repeating tokens in the generated response. A higher value of repeat_penalty will result in a lower probability of repeating tokens, while a lower value will result in a higher probability of repeating tokens.
